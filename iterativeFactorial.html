@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // Écrire une fonction itérative qui renvoie un nombre.
+        // Ce nombre est le résultat de l’opération factorielle à partir du nombre passé en paramètre
+
+        //le calcul de la factorielle d'un nombre, une fonction mathématique qui pour une valeur entière positive, 
+        //retourne le produit de tous les entiers entre 1 et cette valeur. Pour une valeur nulle, la fonction retourne 1.
+        // Par exemple, la factorielle de 5 vaut 1*2*3*4*5 = 120.
+
+
+        function iterativeFactorial(nbr) {
+            if (nbr === 0 || nbr === 1) {
+                return 1;
+            }
+            for (let i = nbr - 1; i >= 1; i--) {
+                nbr *= i
+            } return nbr
+        }
+        console.log(iterativeFactorial(5));
+    </script>
+</head>
+
+<body>
+    <h1>A web page</h1>
+    <p>A paragraph</p>
+</body>
+
+</html>

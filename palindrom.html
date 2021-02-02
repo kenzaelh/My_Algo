@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      //   Ecrire une fonction qui prend en parametre une chaine de char
+      //  et qui renvoi true ou false si le mot en question est un palindrome
+
+      function palindrom(str) {
+        let re = /[\W]/g;
+        // /.../g = global ; [...] = tous les caractere 1 à 1 ;
+        // /W = matcher tout les caractère non alphabetique
+
+        str = str.toLowerCase().replace(re, "");
+        let len = str.length;
+
+        for (let i = 0; i < len / 2; i++) {
+          if (str[i] !== str[len - 1 - i]) {
+            return false;
+          }
+        }
+        return true;
+      }
+      console.log(palindrom("Elu par cette crapule"));
+    </script>
+  </head>
+  <body>
+    <h1>A web page 2</h1>
+    <p>A paragraph</p>
+  </body>
+</html>

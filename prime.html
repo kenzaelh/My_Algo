@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // Écrivez une fonction JavaScript qui accepte un nombre comme paramètre et vérifiez que le nombre est premier ou non.
+        // rq : un nombre premier est un entier naturel supérieur à 1 qui n’a pas de diviseurs positifs autres que 1 et lui-même.
+
+        function prime() {
+            let res = false
+            let numb = prompt("enter a number")
+            let number = parseInt(numb)
+            console.log("number :", number)
+            if (number % 2 == 0) {
+                res = false
+            }
+            if (number % 2 !== 0) {
+                res = true
+            }
+            return res
+        } console.log("nombre premier:", prime());
+    </script>
+</head>
+
+<body>
+    <h1>A web page </h1>
+    <p>A paragraph</p>
+</body>
+
+</html>

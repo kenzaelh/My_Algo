@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // Write a program that takes two strings and displays, without doubles,
+        // the characters that appear in either one of the strings.
+        str = "rien"
+        str2 = "cette phrase ne cache rien"
+        str3 = ""
+        str3 = str + str2 + str3
+        function double(str3) {
+            lastStr = ""
+            let i
+            for (i = 0; i < str3.length; i++) {
+                let j
+                for (j = i + 1; j < str3.length; j++) {
+                    if (str3[i] == str3[j]) break
+                }
+                if (j == str3.length) {
+                    lastStr = lastStr + str3[i]
+                }
+            } return lastStr
+        } console.log(double(str3));
+    </script>
+</head>
+
+<body>
+    <h1>A web page </h1>
+    <p>A paragraph</p>
+</body>
+
+</html>

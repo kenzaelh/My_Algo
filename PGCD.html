@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Ecrire une fonction qui renvoi le PGCD.
+      //Le PGCD de deux entiers qui est le plus grand entier pouvant diviser exactement les deux nombres
+      // 
+      function pgcd(a,b){
+          let r = 0
+          while (b>0){
+              let r = a%b // r= reste de la division euclidienne 
+              a = b 
+              b = r
+          }return a
+       
+      }
+      console.log('pgcd:', pgcd(36,60)); // pgcd : 12
+    </script>
+  </head>
+
+  <body>
+    <h1>A web page</h1>
+    <p>A paragraph</p>
+  </body>
+</html>

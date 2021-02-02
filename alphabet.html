@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // RETOURNE UNE LETTRE SUR 2 DE L'ALPHABET EN MAJUSCULE => BDFHJL.....
+        str = "abcdefghijklmnopqrstuvwxyz"
+        function test(str) {
+            str = str.split('');
+    for(let i=0, len=str.length;i<len;i++)
+    {
+       if(i%2)str[i] = str[i].toUpperCase();
+    }
+    return str.join('');
+        } console.log(test(str));
+    </script>
+</head>
+
+<body>
+    <h1>A web page </h1>
+    <p>A paragraph</p>
+</body>
+
+</html>

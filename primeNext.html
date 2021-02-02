@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Écrire une fonction qui renvoie le nombre premier immédiatement supérieur ou égal au nombre passé en paramètre
+
+      function prime(nbr){
+          for(i=2; i<nbr;i++){
+              if (nbr%i === 0){
+                  return false
+                }
+          }
+          return nbr !== 0
+      }
+      function primeNext(number) {
+        for(j = number; ;j++){
+            if(prime(j)){
+                break
+            }
+        }return j;
+      }
+      console.log( primeNext(91));
+    </script>
+  </head>
+
+  <body>
+    <h1>A web page</h1>
+    <p>A paragraph</p>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // ecrire une fonction qui prend en paramètre une phrase ou un mot et qui nous renvoie le nombre de voyelles//
+                function getVowels(str){
+                   
+                    let vowelsCount = 0;
+                    for (var i = 0; i <= str.length; i++) {
+                        if (str.charAt(i) == "a" || str.charAt(i) == "e" || str.charAt(i) == "i" || str.charAt(i) == "o" || str.charAt(i) == "u"|| str.charAt(i) == "y") {
+                            vowelsCount += 1;
+                            }
+                    }
+                    return vowelsCount;
+
+                }
+            console.log(getVowels('bonjour'));
+
+        </script>
+    </head>
+    <body>
+        <h1>A web page 2</h1>
+        <p >A paragraph</p>
+       
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Ecrire une fonction qui prends en paramètres une chaine de caractères,
+      //et qui remet cette chaines de caractères par ordre alphabétique
+
+      function order(str) {
+        const chars = str.split("");
+        return chars.sort().join("");
+      }
+      console.log(order("bonjour"));
+    </script>
+  </head>
+  <body>
+    <h1>A web page</h1>
+    <p id="Magic code">A paragraph</p>
+    <button type="button" onclick="order()">Click me</button>
+  </body>
+</html>

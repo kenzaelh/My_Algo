@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Écrire une fonction qui prend en paramètre un tableau avec que des chaines de caractère et sortir le mot le plus long //
+      function longestWord(element) {
+        let theLongestWord = "";
+
+        for (l = 0; l < element.length; l++) {
+          if (element[l].length > theLongestWord.length) {
+            theLongestWord = element[l];
+          }
+        }
+        console.log("The longest word is :", theLongestWord);
+        return theLongestWord;
+      }
+      longestWord([
+        "Penelope",
+        "Johny",
+        "Aubumayang",
+        "Czechoslovakia",
+        "Slovenia",
+      ]);
+    </script>
+  </head>
+  <body>
+    <h1>A web page 2</h1>
+    <p>A paragraph</p>
+  </body>
+</html>
